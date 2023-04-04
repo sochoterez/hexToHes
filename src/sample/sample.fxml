@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Text layoutX="169.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From Address : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="169.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Address :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Button layoutX="246.0" layoutY="256.0" mnemonicParsing="false" onAction="#convertHexToHes" prefHeight="25.0" prefWidth="126.0" text="Convert" />
+      <TextField fx:id="txtToAddress" alignment="CENTER_RIGHT" layoutX="309.0" layoutY="200.0" prefHeight="25.0" prefWidth="126.0" promptText="0x00000400" text="0x0000FFFF" />
+      <TextField fx:id="txtFromAddress" alignment="CENTER_RIGHT" layoutX="309.0" layoutY="140.0" prefHeight="25.0" prefWidth="126.0" text="0x00000400" />
+      <Button fx:id="btnChooseFile" layoutX="309.0" layoutY="83.0" mnemonicParsing="false" onAction="#singleFileChooser" prefHeight="25.0" prefWidth="126.0" text="Choose File" />
+      <Label fx:id="labChooseFile" layoutX="309.0" layoutY="44.0" prefHeight="17.0" prefWidth="198.0" text="Choose a file ..." />
+      <Text layoutX="169.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected File :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="168.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version : " />
+      <Text layoutX="169.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :" />
+      <Label fx:id="labVersion" layoutX="309.0" layoutY="320.0" text="-" />
+      <Label fx:id="labType" layoutX="309.0" layoutY="353.0" text="-" />
+      <Label fx:id="labErrorMsg" alignment="CENTER" layoutX="162.0" layoutY="8.0" prefHeight="25.0" prefWidth="272.0" textAlignment="CENTER" textFill="#fd0000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Separator layoutY="294.0" prefHeight="9.0" prefWidth="600.0" />
+      <Label fx:id="labOutputFile" layoutX="308.0" layoutY="388.0" prefHeight="17.0" prefWidth="288.0" text="-" />
+      <Text layoutX="169.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output : " />
+   </children>
+</Pane>
